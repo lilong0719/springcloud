@@ -1,0 +1,17 @@
+server:
+    port: 8082
+    context-path: /ui
+security:
+  basic:
+    enabled: false
+  oauth2:
+    client:
+      clientId: client
+      clientSecret: secret
+      accessTokenUri: http://localhost:8088/sso/oauth/token
+      userAuthorizationUri: http://localhost:8088/sso/oauth/authorize
+    resource:
+      userInfoUri: http://localhost:8088/sso/user/me
+spring:
+  thymeleaf:
+    cache: false

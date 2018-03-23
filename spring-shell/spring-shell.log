@@ -1,0 +1,12 @@
+1516238217565:echo1
+1516238267451:echo1 --a 1 --b 2 --c 3
+1516238680778:string size
+1516238703269:string size -- name 333
+1516238743663:size
+1516238755221:result handler
+1516238786046:result-handler
+1516238795093:string-size
+1516238804324:string-size --name aaaa
+1516238868229:echo1 --a 1 --b 2 --c 3
+1516238907303:userbyid --name xiaoming
+1516239095084:help
