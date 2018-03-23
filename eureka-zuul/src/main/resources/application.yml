@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: zuul
+#zuul:
+ # add-proxy-headers: true
+
+security:
+  basic:
+    enabled: false
+  oauth2:
+    client:
+      clientId: client
+      clientSecret: secret
+      accessTokenUri: http://localhost:8088/sso/oauth/token
+      userAuthorizationUri: http://localhost:8088/sso/oauth/authorize
+    resource:
+      userInfoUri: http://localhost:8088/sso/user/me
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:1111/eureka/
